@@ -21,7 +21,7 @@ The Loadouts component will give players the ability to switch their loadout in 
 
 Add the Loadouts template to the hierarchy.
 
-There is a data table that comes with the component called Loadouts. This can be modified to load the weapons/equipment you want players to use.
+There is a data table that comes with the component called Loadouts. This can be modified to load the weapons/equipment you want players to use. You can easily add more rows to the data table for more loadouts for players to select from.
 
 There are also several custom properties that can be changed on the root of the template.
 
