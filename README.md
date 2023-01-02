@@ -1,31 +1,52 @@
 <div align="center">
 
-# CC-Template-Repository
+# Loadouts
 
-A ... component that does x.
+[![Build Status](https://github.com/ManticoreGamesInc/CC-Loadouts/workflows/CI/badge.svg)](https://github.com/ManticoreGamesInc/CC-Loadouts/actions/workflows/ci.yml?query=workflow%3ACI%29)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/ManticoreGamesInc/CC-Loadouts?style=plastic)
 
-[![Build Status](https://github.com/Core-Team-META/CC-Template-Repository/workflows/CI/badge.svg)](https://github.com/Core-Team-META/CC-Template-Repository/actions/workflows/ci.yml?query=workflow%3ACI%29)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/Core-Team-META/CC-Template-Repository?style=plastic)
-
-![TitleCard](/Screenshots/REPLACE_ME.png)
+![Preview](/Screenshots/Main.png)
 
 </div>
 
+## Finding the Component
+
+This component can be found under the **CoreAcademy** account on Community Content.
+
 ## Overview
 
-Description
+The Loadouts component will give players the ability to switch their loadout in game. It comes with a simple loadout menu for players to select which loadout they want. It also contains a hotbar to allow for quick switching of their weapon/equipment.
 
-## Setup
+## How to use
 
-Setup
+Add the Loadouts template to the hierarchy.
 
-## Credits
+There is a data table that comes with the component called Loadouts. This can be modified to load the weapons/equipment you want players to use.
 
-- List
-- of
-- people
+There are also several custom properties that can be changed on the root of the template.
 
-## How to use this Template
+**Note**: Player Storage should be enabled if you want to save the last item equipped on the player.
 
-- Replace every mention of `CC-Template-Repository` with your new repository name.
-- Replace every mention of `REPLACE_ME` with the correct values.
+- **NormalColor**
+
+	The normal color of the slot loadout when not hovered over it.
+
+- **SelectedColor**
+
+	The selected color of a loadout slot.
+
+- **SaveLoadout**
+
+	If enabled, when a player selects a loadout, it will be saved and loaded for their next session.
+
+- **EnableHotbar**
+
+	If enabled, the player can use the hotbar to switch between their equipment using the scroll wheel.
+
+- **SlotActiveColor**
+
+	The color of the active slot in the hotbar.
+
+- **SlotNormalColor**
+
+	The normal color of a slot in the hotbar.
