@@ -57,6 +57,10 @@ Assets {
             Bool: true
           }
           Overrides {
+            Name: "cs:ForceOn"
+            Bool: true
+          }
+          Overrides {
             Name: "cs:EnableHotbar"
             Bool: true
           }
@@ -170,6 +174,18 @@ Assets {
           Overrides {
             Name: "cs:SlotNormalColor:tooltip"
             String: "The normal color of a slot in the hotbar."
+          }
+          Overrides {
+            Name: "cs:ForceOn:tooltip"
+            String: "In some cases with other components such as costume equippers, the requipment will need to be forced on."
+          }
+          Overrides {
+            Name: "cs:ForceOn:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ForceOn:subcategory"
+            String: "Loadout"
           }
         }
         Collidable_v2 {

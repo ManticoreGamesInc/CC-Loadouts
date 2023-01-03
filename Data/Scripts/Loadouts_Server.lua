@@ -2,6 +2,7 @@ local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 
 local LOADOUTS = require(ROOT:GetCustomProperty("Loadouts"))
 local SAVE_LOADOUT = ROOT:GetCustomProperty("SaveLoadout")
+local FORCE_ON = ROOT:GetCustomProperty("ForceOn")
 
 local players = {}
 
@@ -31,6 +32,10 @@ local function equip_item(player, item_index)
 	})
 
 	players[player].active:Equip(player)
+
+	if(FORCE_ON) then
+		players[player].active.visibility = Visibility.FORCE_ON
+	end
 end
 
 local function save_data(player)
@@ -40,7 +45,7 @@ local function save_data(player)
 
 	if(players[player] ~= nil and players[player].loadout_index ~= nil) then
 		local data = {}
-		
+
 		pcall(function()
 			data = Storage.GetPlayerData(player)
 		end)
@@ -77,7 +82,7 @@ end
 
 local function on_player_joined(player)
 	local data = {}
-	
+
 	players[player] = {}
 
 	if(SAVE_LOADOUT) then
